@@ -1,0 +1,35 @@
+.grid{
+  margin-left: 16vw;
+  padding: 30px;
+  margin-right: 3vw;
+  margin-bottom: 5vh;
+  font-family: Roboto;
+  font-weight: 700;
+  color: rgb(82, 79, 79);
+  font-size: 1.2em;
+  text-shadow: 0px 0px 2px rgb(155, 152, 152);
+}
+
+.action{
+  margin-top: 10vh;
+  
+}
+
+.Anime{
+  margin-top: 2%;
+  width: 200px;
+  height: 320px;
+  
+  box-shadow: 0 0 15px  rgb(163, 160, 160);
+  border-radius: 15px;
+
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 0.5s
+}
+
+.Anime:hover{
+  transform: scale(1.05);
+  cursor:pointer;
+}

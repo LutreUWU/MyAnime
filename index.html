@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyAniList</title>
+
+     <link rel="stylesheet" href="head.css">
+     <link rel="stylesheet" href="grid.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body style="background-color: rgb(237,241,245)">
+        <div class="head" style="background:#2b2d42">
+            
+           
+
+            <div class="left-head-visible" id="leftVisible">
+                <img class="logo" src="hamburger.png" id="hamburger">
+
+                <div class="left-head-hidden" id="hiddenLeftHead">
+                    <img class="logo returnButton" src="back.png" id="backButton">
+
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <script>
+                    hamburger = document.getElementById("hamburger")
+                    leftHidden = document.getElementById("hiddenLeftHead")
+
+                    leftVisible = document.getElementById("leftVisible")
+                    backButton = document.getElementById("backButton")
+
+                    hamburger.addEventListener("click", function(){
+                       
+                        leftVisible.style.left = "-80px"
+
+                    setTimeout(() => {
+                        leftHidden.style.left = "0vw"
+                            },400)   
+                             })
+
+                    backButton.addEventListener("click", function(){
+                        leftHidden.style.left = "-15vw"
+                        
+
+                        setTimeout(() => {
+                        leftVisible.style.left = "0px"
+                            },400)   
+                             
+                    })         
+                </script>
+            </div>
+
+            <div class="mid-head">
+                My Anime List !
+            </div>
+        
+            
+
+            <div class="right-head-visible" >
+                <p>Last Update</p>
+                <p> XX/XX/XX </p>
+            </div>
+        </div>
+
+       
+
+        <div class="right-head-hidden">
+            right
+        </div>
+
+        <div class="grid action">
+    
+            <div class="title">
+                Action
+            </div>
+            <div class="AnimeAction">
+                <div class="Anime OneA" style="background-image: url(Action/SaberTrailer.jpg);">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid ">
+    
+            <div class="title">
+                Romance
+            </div>
+            <div class="AnimeRomance">
+                <div class="Anime OneB">
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+    </html>

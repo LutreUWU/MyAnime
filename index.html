@@ -81,9 +81,42 @@
                 Action
             </div>
             <div class="AnimeAction">
-                <div class="Anime OneA" style="background-image: url(Action/SaberTrailer.jpg);">
-                </div>
+                
+                
+                <div class="ActionOne" style="display: inline-block;" >
+                    <div class="Description" id="hidden-actionOne">
+                        <p style="color:grey">Fate/Zero</p>
+                        <p style="font-size: 0.7em; color:rgb(204, 22, 22); text-shadow: none;">ufotable</p>
+                        <div class="starDiv">
+                            <img  src="star.png">
+                            <img  src="star.png">
+                            <img  src="star.png">
+                            <img  src="star.png">
+                            <img  src="star.png">  
+                        </div>
+                    </div>
+                    <div class="Anime" style="background-image: url(Action/SaberTrailer.jpg);" id="ActionOne"></div>
+                    
+                    <script>
+                        ActionOne = document.getElementById("ActionOne")
+                        HiddenActionOne = document.getElementById("hidden-actionOne")
 
+                        ActionOne.addEventListener("mouseover",function(){
+                            HiddenActionOne.style.opacity = "1"
+                            HiddenActionOne.style.transform = "scale(1.0)"
+                        })
+
+                        ActionOne.addEventListener("mouseout", function(){
+                            HiddenActionOne.style.opacity = "0"
+                            HiddenActionOne.style.transform = "scale(0.95)"
+                        })
+
+                    </script>
+                </div>
+                
+            </div>
+
+    
             </div>
         </div>
 

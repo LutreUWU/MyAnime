@@ -1,6 +1,9 @@
+
+
 .grid{
+  position: relative;
   margin-left: 16vw;
-  padding: 30px;
+  padding: 50px;
   margin-right: 3vw;
   margin-bottom: 5vh;
   font-family: Roboto;
@@ -8,6 +11,21 @@
   color: rgb(82, 79, 79);
   font-size: 1.2em;
   text-shadow: 0px 0px 2px rgb(155, 152, 152);
+  
+
+  
+  
+  
+  box-shadow: 0 0 10px #27297c, 0 0 20px #1f22c7, 0 0 30px #1215be, 0 0 40px #0a0d91, 0 0 70px #090a69, 0 0 80px #2b2d42;
+  background-image: url("menubackground.jpg");
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  border-bottom-right-radius: 25%;
+  
+  
+  
 }
 
 .action{
@@ -26,7 +44,7 @@
 
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  
   transition: all 0.5s
 }
 
@@ -37,25 +55,27 @@
 
 .AnimeAction{
   position: relative;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 }
 .Description{
     position: absolute;
     top: 0px;
-    left: 100%;
-    margin-left: 18px;
+    left: 65%;
+    
     margin-top: -30px;
     width: 300px;
     height: 150px;
     opacity: 0;
     
     background-color: rgb(237,241,245);  
-    box-shadow: 0 0 100px 1px rgb(224, 221, 221);
+    box-shadow: 0 0 50px rgb(224, 221, 221);
     border-radius: 15px;
     padding: 10px;
 
     transition: all 0.4s;
     transform: scale(0.95);
+    z-index: 10;
 }
 
 .Description::before{
@@ -83,4 +103,227 @@
 .starDiv img{
   width: 10%;
   filter: drop-shadow(0px 0px 22px  rgba(0, 0, 0, 0.582));
+}
+
+
+.DescriptionDiv::before{
+  position: fixed;
+  content:"";
+  filter: brightness(30%);
+  background-image: url("Action/ActionOne/FateZero.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 75vw;
+  height: 65vh;
+  z-index: -1;
+  padding: 25px;
+  
+}
+
+
+
+.actionTwoDescription::before{
+  background-image: url("Action/ActionTwo/wallpaper.jpg");
+}
+
+.actionThreeDescription::before{
+  background-image: url("Action/ActionThree/wallpaper.jpg");
+}
+
+.actionFourDescription::before{
+  background-image: url("Action/ActionFour/wallpaper.jpg");
+}
+.DescriptionDiv{
+  
+  width: 75vw;
+  height: 65vh;
+  position: fixed;
+  
+  
+  left: 50%; /* on positionne l'élément à la moitié de l'écran */
+  margin-left: -37.5vw; /* on applique une marge négative de la moitié de la largeur de l'élément */
+  top:50%;
+  margin-top: -37.5vh;
+  transform: skewY(1deg);
+  display: grid;
+  grid-template-columns: 35% 65%;
+  
+  transition: all 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+  
+}
+
+.textDivAnime{
+  transform: skewY(-1deg);
+  margin: 1%;
+  font-family: Roboto ;
+  font-weight:400;
+  color: rgb(190, 185, 185);
+  text-align: center;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar, 
+div::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  
+}
+body::-webkit-scrollbar-thumb, 
+div::-webkit-scrollbar-thumb {
+  background-color: #2b2d42;
+  border-radius: 5px;
+}
+
+.imageDescription{
+  position: relative;
+  width: 120%;
+  height: 110%;
+ 
+  
+  object-fit: cover;
+  object-position: center;
+  
+  
+  
+  
+}
+
+
+.SuccesAndFavorite{
+  margin-top: 10%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.Succes{
+  background-color: rgba(128, 128, 128, 0.527);
+  transform: skewY(-5deg);
+  padding: 30px;
+}
+
+.imgSucces img{
+  transition: all 0.5s;
+  margin: 5px;
+}
+.imgSucces img:hover{
+  transform: scale(1.2);
+  
+}
+
+.Favorite{
+  position: relative;
+  margin: 20px;
+  width: 25vw;
+  height: 25vh;
+  margin-right: 10%;
+  border-radius: 30px;
+  overflow: hidden;
+  filter: brightness(75%);
+}
+
+.peoplehidden,
+.medalhidden,
+.bookhidden,
+.hearthidden{
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.2s;
+  opacity: 0;
+  font-size: 80%;
+  width: 60%;
+  padding: 10px;
+  background-color: rgb(44, 45, 46);
+  transform: skewY(5deg);
+
+}
+
+.hearthidden::before{
+  content:"";
+  position: absolute;
+  top: 35px;
+  left: 78px;
+  
+ 
+  border-top: 10px solid rgb(44, 45, 46);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.hearthidden{
+  top: 20px;
+  right: 120px;
+}
+
+.bookhidden::before{
+  content:"";
+  position: absolute;
+  top: 35px;
+  left: 73px;
+  
+ 
+  border-top: 10px solid rgb(44, 45, 46);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+
+.bookhidden{
+  top: 20px;
+  right: 70px;
+  
+}
+
+.medalhidden::before{
+  content:"";
+  position: absolute;
+  top: 55px;
+  left: 78px;
+  
+ 
+  border-top: 10px solid rgb(44, 45, 46);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.medalhidden{
+  top:-8px;
+  right: -25px;
+  
+}
+
+.peoplehidden::before{
+  content:"";
+  position: absolute;
+  top: 55px;
+  left: 78px;
+  
+ 
+  border-top: 10px solid rgb(44, 45, 46);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.peoplehidden{
+  
+  top:-5px;
+  right: 30px;
+  
+}
+
+.heart:hover .hearthidden,
+.book:hover .bookhidden,
+.people:hover .peoplehidden,
+.medal:hover .medalhidden {
+  
+  opacity: 1;
 }

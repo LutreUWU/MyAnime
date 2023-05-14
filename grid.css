@@ -1,6 +1,7 @@
 
 
 .grid{
+  margin-top: 5%;
   position: relative;
   margin-left: 16vw;
   padding: 50px;
@@ -53,10 +54,13 @@
   cursor:pointer;
 }
 
+.AnimeRomance,
 .AnimeAction{
+  margin-top: 5%;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-row-gap: 50px;
 }
 .Description{
     position: absolute;
@@ -105,7 +109,7 @@
   filter: drop-shadow(0px 0px 22px  rgba(0, 0, 0, 0.582));
 }
 
-
+/*
 .DescriptionDiv::before{
   position: fixed;
   content:"";
@@ -133,10 +137,17 @@
 .actionFourDescription::before{
   background-image: url("Action/ActionFour/wallpaper.jpg");
 }
+
+.actionFiveDescription::before{
+  background-image: url("Action/ActionFive/wallpaper.jpg");
+  
+}
+*/
+
 .DescriptionDiv{
   
   width: 75vw;
-  height: 65vh;
+  height: max-content;
   position: fixed;
   
   
@@ -149,10 +160,10 @@
   grid-template-columns: 35% 65%;
   
   transition: all 0.5s;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 20;
+  opacity: 1;
   
+  z-index: 20;
+  padding: 25px;
 }
 
 .textDivAnime{
@@ -207,6 +218,12 @@ div::-webkit-scrollbar-thumb {
   padding: 30px;
 }
 
+.imgSucces{
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
 .imgSucces img{
   transition: all 0.5s;
   margin: 5px;
@@ -216,6 +233,12 @@ div::-webkit-scrollbar-thumb {
   
 }
 
+.SuccesTitle{
+  color: red; 
+  text-decoration: underline;
+  transform: skewY(5deg);
+  margin: 0;
+}
 .Favorite{
   position: relative;
   margin: 20px;
@@ -225,6 +248,7 @@ div::-webkit-scrollbar-thumb {
   border-radius: 30px;
   overflow: hidden;
   filter: brightness(75%);
+  
 }
 
 .peoplehidden,
@@ -240,7 +264,8 @@ div::-webkit-scrollbar-thumb {
   padding: 10px;
   background-color: rgb(44, 45, 46);
   transform: skewY(5deg);
-
+  z-index: 99;
+  
 }
 
 .hearthidden::before{
@@ -259,6 +284,7 @@ div::-webkit-scrollbar-thumb {
 .hearthidden{
   top: 20px;
   right: 120px;
+ 
 }
 
 .bookhidden::before{
@@ -320,10 +346,95 @@ div::-webkit-scrollbar-thumb {
   
 }
 
-.heart:hover .hearthidden,
-.book:hover .bookhidden,
-.people:hover .peoplehidden,
-.medal:hover .medalhidden {
+.visible:hover .hearthidden,
+.visible:hover .bookhidden,
+.visible:hover .peoplehidden,
+.visible:hover .medalhidden {
   
   opacity: 1;
+}
+
+.object{
+  margin: 4%;
+  border-radius: 20%;
+  height: 70vh;
+  border: solid 2px goldenrod;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+.background{
+  width: 100%;
+  height: 100%;
+  filter: brightness(30%);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flex{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.TitlePhidden{
+  font-size: 1.5em; font-family:Roboto ; font-weight: 700; color: rgb(22, 160, 202); text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.buttonHiddenDiv{
+  width: 3.5%;
+ position: absolute;
+ right: 0px;
+ transition: all 0.5s ;
+}
+
+.buttonHiddenDiv:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.addAnime{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  top: 0px;
+  left: 150px;
+  border: solid 2px pink;
+  
+  padding: 0 15px 0 15px;
+  
+  border-radius: 100%;
+  text-shadow: none;
+  transition: all 1s ;
+}
+
+.addAnime:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.title{
+  
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #0e19b3, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF00FF, 0 0 70px #FF00FF, 0 0 80px #170f86, 0 0 100px #0400ff, 0 0 150px #0e0c8b;
+  color: #fdfbfb;
+
+  animation: neon 2s ease-in-out infinite alternate ;
 }

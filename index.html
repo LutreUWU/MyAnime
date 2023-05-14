@@ -12,8 +12,8 @@
 
     </head>
 
-    <body style="background:linear-gradient(to bottom right, rgb(3, 3, 3), rgb(92, 90, 90))">
-        <div class="head" style="background:#2b2d42">
+    <body style="background:linear-gradient(to bottom right, rgb(3, 3, 3), rgb(92, 90, 90));overflow-x: hidden;">
+        <div class="head" style="background-color: #2b2d42;">
             
            
 
@@ -75,627 +75,588 @@
             right
         </div>
 
-        <div class="grid action">
-    
-            <div class="title">
-                Action
 
-                <style>
-                    .title{
-                        font-size: 2.5em;
-                        text-shadow: 0 0 10px #0e19b3, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF00FF, 0 0 70px #FF00FF, 0 0 80px #170f86, 0 0 100px #0400ff, 0 0 150px #0e0c8b;
-                        color: #fdfbfb;
-  
-                        animation: neon 2s ease-in-out infinite alternate ;
-                    }
-
-                    @keyframes neon {
-                        0%, 20%, 50%, 100% {
-                            opacity: 1;
-                        }
-                        10%, 30%{
-                            opacity: 0.2;
-                        }
-
-
-                        
-                        }
-                </style>
+<!--Div Pour m'aider à créer la div en javascript-->        
+        <div class="DescriptionDiv actionSixDescription " style="display: none;"> <!--DivMain2-->
+                                
+            <div class="object"  > <!--ImagehiddenDiv-->
+                <img class= "imageDescription" src="Action/ActionSix/cover.jpg" id="actionSix"> <!--Imagehidden-->
             </div>
-            <div class="AnimeAction">
-                
-                
-                <div style="display: inline-block; position: relative;" >
-                    <div class="Description" id="hidden-actionOne">
-                        <p style="color:grey">Fate/Zero</p>
-                        <p style="font-size: 0.7em; color:rgb(204, 22, 22); text-shadow: none;">ufotable</p>
-                        <div class="starDiv">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">  
-                        </div>
-                    </div>
-                    <div class="Anime" style="background-image: url(Action/ActionOne/SaberTrailer.jpg);" id="ActionOne"></div>
-                    
-                    <script>
-                        ActionOne = document.getElementById("ActionOne")
-                        HiddenActionOne = document.getElementById("hidden-actionOne")
-
-                        ActionOne.addEventListener("mouseover",function(){
-                            HiddenActionOne.style.opacity = "1"
-                            HiddenActionOne.style.transform = "scale(1.0)"
-                        })
-
-                        ActionOne.addEventListener("mouseout", function(){
-                            HiddenActionOne.style.opacity = "0"
-                            HiddenActionOne.style.transform = "scale(0.95)"
-                        })
-
-                    </script>
-
-                    <div class="DescriptionDiv actionOneDescription " id="ActionDivOne">
-                                
-                                    <div class="object"  style="margin: 4%; border-radius: 20%; border: solid 2px goldenrod; overflow: hidden; display: flex; justify-content:center; ;">
-                                        <img class= "imageDescription" src="Action/ActionOne/SaberTrailer.jpg" id="actionone">
-                                    </div>
-                                    
-                                    <div class="textDivAnime">
-                                        <div style="display: flex; justify-content: center; ">
-                                            <p style="font-size: 1.5em; font-family:Roboto ; font-weight: 700; color: rgb(22, 160, 202); text-decoration: underline;">Fate/Zero</p>
-                                            <img class="logo returnButton hiddenbutton" src="backwhite.png" style="width: 3.5%;">
-                                    </div>
-                                        <p>L'histoire prend place 10 ans avant les événements de Fate/stay night. Durant la Guerre du Saint Graal, sept grands mages (Masters) nommés par le Saint Graal vont invoquer sept esprits mythiques (Servants) afin de se livrer une lutte acharnée jusqu'à ce qu'il n'en reste qu'un.</p>
-                                        <p>Après trois guerres infructueuses, le combat est sur le point de reprendre pour la quatrième fois, et les mages s'empressent de rejoindre Fuyuki, le champ de bataille, chacun priant pour la victoire. En effet, le Saint Graal offrira au vainqueur la possibilité d'exaucer son vœu le plus cher.</p>
-                                        <p>Parmi ces sept Masters, l'un d'entre eux, Kirei Kotomine, ne semble montrer aucune détermination pour acquérir ce Saint Graal, tandis qu'à l'opposé, Kiritsugu Emiya se bat de toutes ses forces pour l'obtenir. La rivalité entre ces deux hommes, ainsi que le déroulement des différentes luttes entre Masters et Servants, constitue le cœur du récit.</p>
-                                        <div class="SuccesAndFavorite">
-                                            <div class="Succes">
-
-                                                <p style="color: red; text-decoration: underline;transform: skewY(5deg);margin: 0;">Trophées débloqués</p>
-                                                
-                                                <div class="imgSucces" style="display: flex; justify-content: space-between;margin-top: 5%;">
-                                                    <div class="heart">
-                                                        <div class="hearthidden">David a aimé la série</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/heart.png" >
-                                                      </div>
-                                                      
-                                                      <div class="book">
-                                                        <div class="bookhidden">David a aimé l'histoire</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/book.png" >
-                                                      </div>
-                                                      
-                                                      <div class="people">
-                                                        <div class="peoplehidden">David a aimé les personnages</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/people.png" >
-                                                      </div>
-                                                      
-                                                      <div class="medal">
-                                                        <div class="medalhidden">Cet animé est dans son top 10</div>
-                                                        <img style="width: 55px; height: 35px;" src="logo/medal.png" >
-                                                      </div>
-                                                      
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                </div>
-    
-                                            
-                                            </div>
-                                            <div class="Favorite">
-                                                <div style="position: absolute; width: 100%;margin-top: 5px;" >
-                                                    <span style="color:red;">Personnage favoris</span>
-                                                    <span style="display: flex; justify-content: center; width: 100%;">Artoria</span>
-                                                </div>
-                                                <img style="width: 100%; height: 100%; object-fit: cover; object-position: center;margin-top: 5px;" src="Action/ActionOne/SaberGif.gif">
-                                                
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                 
-                                    <script>
-                                        imageActionOne = document.getElementById("actionone");
-                                        
-                                        imageActionOne.addEventListener("mouseover",function(){
-                                            imageActionOne.addEventListener("mousemove",parallax);
-                                        })
-                                    
-                                        function parallax(e){
-                                            
-                                                
-                                            document.querySelectorAll(".object").forEach(function(move){
-
-                                            
-                                                var x = e.clientX * 4/250;
-                                                var y = e.clientY * 4/250;
-                                                imageActionOne.style.transition  = "none"
-                                                imageActionOne.style.left = x + "px"; 
-                                                imageActionOne.style.top = - y + "px";
-                                            })
-                                        }
-                                        
-                                        imageActionOne.addEventListener("mouseout",function(){
-                                            imageActionOne.style.left = 0 + "px"; 
-                                            imageActionOne.style.top = 0 + "px";
-                                            imageActionOne.style.transition  = "all 0.5s"
-
-                                        })
-                                    
-                                    </script>
-
-                                    
-                    </div>
-
-                    <script>
-                        ActionOne.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="none"
-                            DivActionOne = document.getElementById("ActionDivOne")
-                            DivActionOne.style.opacity = "1";
-                            DivActionOne.style.pointerEvents = "auto";
-                        })
-
-                        hiddenbutton = document.querySelector(".hiddenbutton");
-                        hiddenbutton.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="all"
-                        
-                            DivActionOne.style.opacity = "0";
-                            DivActionOne.style.pointerEvents = "none";
-                        })
-                        
-                    </script>
-                </div>
-
-                <div style="display: inline-block; position: relative;" >
-                    <div class="Description" id="hidden-actionTwo">
-                        <p style="color:grey">Fate/Stay Night UBW</p>
-                        <p style="font-size: 0.7em; color:rgb(204, 22, 22); text-shadow: none;">ufotable</p>
-                        <div class="starDiv">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="starvoid.png">  
-                        </div>
-                    </div>
-                    <div class="Anime" style="background-image: url(Action/ActionTwo/Cover.jpg);" id="ActionTwo"></div>
-                    
-                    <script>
-                        ActionTwo = document.getElementById("ActionTwo")
-                        HiddenActionTwo = document.getElementById("hidden-actionTwo")
-
-                        ActionTwo.addEventListener("mouseover",function(){
-                            HiddenActionTwo.style.opacity = "1"
-                            HiddenActionTwo.style.transform = "scale(1.0)"
-                        })
-
-                        ActionTwo.addEventListener("mouseout", function(){
-                            HiddenActionTwo.style.opacity = "0"
-                            HiddenActionTwo.style.transform = "scale(0.95)"
-                        })
-
-                    </script>
-
-                    <div class="DescriptionDiv actionTwoDescription " id="ActionDivTwo">
-                                
-                                    <div class="object"  style="margin: 4%; border-radius: 20%; border: solid 2px goldenrod; overflow: hidden; display: flex; justify-content:center; ;">
-                                        <img class= "imageDescription" src="Action/ActionTwo/Cover.jpg" id="actiontwo">
-                                    </div>
-                                    
-                                    <div class="textDivAnime">
-                                        <div style="display: flex; justify-content: center; ">
-                                            <p style="font-size: 1.5em; font-family:Roboto ; font-weight: 700; color: rgb(22, 160, 202); text-decoration: underline;">Fate/Stay Night UBW</p>
-                                            <img class="logo returnButton hiddenbutton A2" src="backwhite.png" style="width: 3.5%;">
-                                    </div>
-                                        <p>Depuis des millénaires, la guerre secrète pour la possession du Saint-Graal se poursuit, connue de seuls quelques élus.</p>
-                                        <p>Rin, une jeune mage, s'y prépare en invoquant son servant Archer, l'incarnation physique et spirituelle d'un héros légendaire qui combattra à ses côtés.</p>
-                                        <p>Shirô Emiya est le fils adoptif de Kiritsugu Emiya, un mage ayant déjà participé à la "Guerre du Saint Graal". Cette guerre oppose 7 mages et 7 Servants, des "âmes héroïques" ramenés à la vie le temps des combats. 10 ans après son père, Shirô participera à une nouvelle guerre entre mages, accompagné du Servant de classe Saber.</p>
-                                        <div class="SuccesAndFavorite">
-                                            <div class="Succes">
-
-                                                <p style="color: red; text-decoration: underline;transform: skewY(5deg);margin: 0;">Trophées débloqués</p>
-                                                
-                                                <div class="imgSucces" style="display: flex; justify-content: space-between;margin-top: 5%;">
-                                                    <div class="heart">
-                                                        <div class="hearthidden">David a aimé la série</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/heart.png" >
-                                                      </div>
-                                                      
-                                                      <div class="book">
-                                                        <div class="bookhidden">David a aimé l'histoire</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/book.png" >
-                                                      </div>
-                                                      
-                                                      <div class="people">
-                                                        <div class="peoplehidden">David a aimé les personnages</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/people.png" >
-                                                      </div>
-                                                      
-                                                      <div class="medal" style="pointer-events: none;">
-                                                        <div class="medalhidden">Cet animé est dans son top 10</div>
-                                                        <div style="width: 55px; height: 35px;"  ></div>
-                                                      </div>
-                                                      
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                </div>
-    
-                                            
-                                            </div>
-                                            <div class="Favorite">
-                                                <div style="position: absolute; width: 100%;margin-top: 5px;" >
-                                                    <span style="color:red;">Personnage favoris</span>
-                                                    <span style="display: flex; justify-content: center; width: 100%;">Rin Tohsaka</span>
-                                                </div>
-                                                <img style="width: 100%; height: 100%; object-fit: cover; object-position: center;margin-top: 5px;" src="Action/ActionTwo/Favorite.gif">
-                                                
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                 
-                                    <script>
-                                        imageActionTwo = document.getElementById("actiontwo");
-                                        
-                                        imageActionTwo.addEventListener("mouseover",function(){
-                                            imageActionTwo.addEventListener("mousemove",parallax);
-                                        })
-                                    
-                                        function parallax(e){
-                                            
-                                                
-                                            document.querySelectorAll(".object").forEach(function(move){
-
-                                            
-                                                var x = e.clientX * 4/250;
-                                                var y = e.clientY * 4/250;
-                                                imageActionTwo.style.transition  = "none"
-                                                imageActionTwo.style.left = x + "px"; 
-                                                imageActionTwo.style.top = - y + "px";
-                                            })
-                                        }
-                                        
-                                        imageActionTwo.addEventListener("mouseout",function(){
-                                            imageActionTwo.style.left = 0 + "px"; 
-                                            imageActionTwo.style.top = 0 + "px";
-                                            imageActionTwo.style.transition  = "all 0.5s"
-
-                                        })
-                                    
-                                    </script>
-
-                                    
-                    </div>
-
-                    <script>
-                        ActionTwo.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="none"
-                            DivActionTwo = document.getElementById("ActionDivTwo")
-                            DivActionTwo.style.opacity = "1";
-                            DivActionTwo.style.pointerEvents = "auto";
-                        })
-
-                        hiddenbuttonTwo = document.querySelector(".A2   ");
-                        hiddenbuttonTwo.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="all"
-                        
-                            DivActionTwo.style.opacity = "0";
-                            DivActionTwo.style.pointerEvents = "none";
-                        })
-                        
-                    </script>
-                </div>
-                
-                <div style="display: inline-block; position: relative;" >
-                    <div class="Description" id="hidden-actionThree">
-                        <p style="color:grey">Fate Apocrypha</p>
-                        <p style="font-size: 0.7em; color:rgb(204, 22, 22); text-shadow: none;">A-1 Pictures</p>
-                        <div class="starDiv">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">  
-                        </div>
-                    </div>
-                    <div class="Anime" style="background-image: url(Action/ActionThree/Cover.webp);" id="ActionThree"></div>
-                    
-                    <script>
-                        ActionThree = document.getElementById("ActionThree")
-                        HiddenActionThree = document.getElementById("hidden-actionThree")
-
-                        ActionThree.addEventListener("mouseover",function(){
-                            HiddenActionThree.style.opacity = "1"
-                            HiddenActionThree.style.transform = "scale(1.0)"
-                        })
-
-                        ActionThree.addEventListener("mouseout", function(){
-                            HiddenActionThree.style.opacity = "0"
-                            HiddenActionThree.style.transform = "scale(0.95)"
-                        })
-
-                    </script>
-
-                    <div class="DescriptionDiv actionThreeDescription " id="ActionDivThree">
-                                
-                                    <div class="object"  style="margin: 4%; border-radius: 20%; border: solid 2px goldenrod; overflow: hidden; display: flex; justify-content:center; ;">
-                                        <img class= "imageDescription" src="Action/ActionThree/Cover.png" id="actionThree">
-                                    </div>
-                                    
-                                    <div class="textDivAnime">
-                                        <div style="display: flex; justify-content: center; ">
-                                            <p style="font-size: 1.5em; font-family:Roboto ; font-weight: 700; color: rgb(22, 160, 202); text-decoration: underline;">Fate/Apocrypha </p>
-                                            <img class="logo returnButton hiddenbutton A3" src="backwhite.png" style="width: 3.5%;">
-                                    </div>
-                                        <p>L'histoire se déroule dans un monde parallèle à celui d'origine de Fate/stay night, où la Maison des Einzbern a invoqué Ruler plutôt qu'Avenger dans la Troisième Guerre du Saint Graal, et le Saint Graal a été retiré de la ville Fuyuki pour l'envoyer en Roumanie après la guerre. Ainsi, les événements de Fate/Zero et Fate/stay night n'ont jamais eu lieu.</p>
-                                        <p>L'histoire se concentre sur le conflit entre les deux factions opposées, les Rouges et les Noirs, en appelant chacun sept Servants et le Graal lui-même appelant un servant spécial de classe Ruler en tant que médiateur de la Guerre Sainte. Les membres de la faction Rouge sont des mages envoyés par l'Association des Mages de la Tour de l'Horloge, tandis que les membres de la faction Noire font partie d'une famille roumaine de mages, les Yggdmillennia.</p>
-                                        <p>Et ainsi, le rideau s'élève sur l'avènement d'une nouvelle ère pour la Guerre du Saint Graal, avec son système qui a changé ; une grande guerre à une échelle sans précédent va éclater au grand jour… </p>
-                                        <div class="SuccesAndFavorite">
-                                            <div class="Succes">
-
-                                                <p style="color: red; text-decoration: underline;transform: skewY(5deg);margin: 0;">Trophées débloqués</p>
-                                                
-                                                <div class="imgSucces" style="display: flex; justify-content: space-between;margin-top: 5%;">
-                                                    <div class="heart">
-                                                        <div class="hearthidden">David a aimé la série</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/heart.png" >
-                                                      </div>
-                                                      
-                                                      <div class="book">
-                                                        <div class="bookhidden">David a aimé l'histoire</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/book.png" >
-                                                      </div>
-                                                      
-                                                      <div class="people">
-                                                        <div class="peoplehidden">David a aimé les personnages</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/people.png" >
-                                                      </div>
-                                                      
-                                                      <div class="medal" >
-                                                        <div class="medalhidden">Cet animé est dans son top 3</div>
-                                                        <img style="width: 55px; height: 35px;" src="logo/medalgold.png" >
-                                                      </div>
-                                                      
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                </div>
-    
-                                            
-                                            </div>
-                                            <div class="Favorite">
-                                                <div style="position: absolute; width: 100%;margin-top: 5px;" >
-                                                    <span style="color:red;">Personnage favoris</span>
-                                                    <span style="display: flex; justify-content: center; width: 100%;">Mordred</span>
-                                                </div>
-                                                <img style="width: 100%; height: 100%; object-fit: cover; object-position: center;margin-top: 5px;" src="Action/ActionThree/Favorite.gif">
-                                                
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                 
-                                    <script>
-                                        imageActionThree = document.getElementById("actionThree");
-                                        
-                                        imageActionThree.addEventListener("mouseover",function(){
-                                            imageActionThree.addEventListener("mousemove",parallax);
-                                        })
-                                    
-                                        function parallax(e){
-                                            
-                                                
-                                            document.querySelectorAll(".object").forEach(function(move){
-
-                                            
-                                                var x = e.clientX * 4/250;
-                                                var y = e.clientY * 4/250;
-                                                imageActionThree.style.transition  = "none"
-                                                imageActionThree.style.left = x + "px"; 
-                                                imageActionThree.style.top = - y + "px";
-                                            })
-                                        }
-                                        
-                                        imageActionThree.addEventListener("mouseout",function(){
-                                            imageActionThree.style.left = 0 + "px"; 
-                                            imageActionThree.style.top = 0 + "px";
-                                            imageActionThree.style.transition  = "all 0.5s"
-
-                                        })
-                                    
-                                    </script>
-
-                                    
-                    </div>
-
-                    <script>
-                        ActionThree.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="none"
-                            DivActionThree = document.getElementById("ActionDivThree")
-                            DivActionThree.style.opacity = "1";
-                            DivActionThree.style.pointerEvents = "auto";
-                        })
-
-                        hiddenbuttonThree = document.querySelector(".A3   ");
-                        hiddenbuttonThree.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="all"
-                        
-                            DivActionThree.style.opacity = "0";
-                            DivActionThree.style.pointerEvents = "none";
-                        })
-                        
-                    </script>
-                </div>
             
-                <div style="display: inline-block; position: relative;" >
-                    <div class="Description" id="hidden-actionFour">
-                        <p style="color:grey">Toaru</p>
-                        <p style="font-size: 0.7em; color:rgb(204, 22, 22); text-shadow: none;">J.C. Staff </p>
-                        <div class="starDiv">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">
-                            <img  src="star.png">  
-                        </div>
-                    </div>
-                    <div class="Anime" style="background-image: url(Action/ActionFour/cover.jpg);" id="ActionFour"></div>
-                    
-                    <script>
-                        ActionFour = document.getElementById("ActionFour")
-                        HiddenActionFour = document.getElementById("hidden-actionFour")
+            <div class="textDivAnime"> <!--TexthiddenDiv-->
+                <div class="flex"> <!--TitlehiddenDiv-->
+                    <p class="TitlePhidden">Toaru</p>
+                    <img class="logo returnButton hiddenbutton A6" src="backwhite.png" style="width: 3.5%;">
 
-                        ActionFour.addEventListener("mouseover",function(){
-                            HiddenActionFour.style.opacity = "1"
-                            HiddenActionFour.style.transform = "scale(1.0)"
-                        })
-
-                        ActionFour.addEventListener("mouseout", function(){
-                            HiddenActionFour.style.opacity = "0"
-                            HiddenActionFour.style.transform = "scale(0.95)"
-                        })
-
-                    </script>
-
-                    <div class="DescriptionDiv actionFourDescription " id="ActionDivFour">
-                                
-                                    <div class="object"  style="margin: 4%; border-radius: 20%; border: solid 2px goldenrod; overflow: hidden; display: flex; justify-content:center; ;">
-                                        <img class= "imageDescription" src="Action/ActionFour/cover.jpg" id="actionFour">
-                                    </div>
-                                    
-                                    <div class="textDivAnime">
-                                        <div style="display: flex; justify-content: center; ">
-                                            <p style="font-size: 1.5em; font-family:Roboto ; font-weight: 700; color: rgb(22, 160, 202); text-decoration: underline;">Toaru</p>
-                                            <img class="logo returnButton hiddenbutton A4" src="backwhite.png" style="width: 3.5%;">
-                                    </div>
-                                        <p> Toaru est une série de light novel qui se déroule dans la ville académique, une ville de haute technologie peuplée de scientifiques et de personnes ayant des pouvoirs surnaturels. Dans Toaru nous allons suivre l'histoire de 3 personnages, chacun possédant son propre animé :</p>
-                                        <p><span style="color: blue; text-shadow: none; text-decoration: underline;">Toaru Majutsu no Index : </span>  L'histoire suit la vie de Kamijo Toma, un utilisateur de pouvoirs psychiques qui lui permet d'être invincible à tous les pouvoirs, malgré cela, il se retrouve souvent impliqué dans des situations dangereuses impliquant d'autres utilisateurs de pouvoirs psychiques.</p>
-                                        <p><span style="color: orange; text-decoration: underline;">Toaru Kagaku no Railgun : </span>Mikoto Misaka est l'un des personnages principaux de la série, également connue sous le surnom de "Railgun" en raison de son pouvoir électrique. Elle est considérée comme l'une des plus puissantes espers (personnes ayant des pouvoirs surnaturels) dans l'univers de Toaru. Malgré sa force, elle a un côté vulnérable et un profond respect pour la vie humaine.  </p>
-                                        <p><span style="color: rgb(165, 151, 151); text-decoration: underline;">Toaru Kagaku no Accelerator : </span>Accelerator, quant à lui, est un personnage antagoniste au début de la série, connu sous le nom de "One-Way Road". Il possède le pouvoir de manipuler la gravité et a été présenté comme l'espèce la plus puissante de la Cité Académique. Il est développé comme personnage principal et son personnage évolue pour devenir plus complexe et nuancé.  </p>
-                                        <div class="SuccesAndFavorite">
-                                            <div class="Succes">
-
-                                                <p style="color: red; text-decoration: underline;transform: skewY(5deg);margin: 0;">Trophées débloqués</p>
-                                                
-                                                <div class="imgSucces" style="display: flex; justify-content: space-between;margin-top: 5%;">
-                                                    <div class="heart">
-                                                        <div class="hearthidden">David a aimé la série</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/heart.png" >
-                                                      </div>
-                                                      
-                                                      <div class="book">
-                                                        <div class="bookhidden">David a aimé l'histoire</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/book.png" >
-                                                      </div>
-                                                      
-                                                      <div class="people">
-                                                        <div class="peoplehidden">David a aimé les personnages</div>
-                                                        <img style="width: 35px; height: 35px;" src="logo/people.png" >
-                                                      </div>
-                                                      
-                                                      <div class="medal" >
-                                                        <div class="medalhidden">Cet animé est dans son top 3</div>
-                                                        <img style="width: 55px; height: 35px;" src="logo/medalgold.png" >
-                                                      </div>
-                                                      
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                </div>
-    
-                                            
-                                            </div>
-                                            <div class="Favorite">
-                                                <div style="position: absolute; width: 100%;margin-top: 5px;" >
-                                                    <span style="color:red;">Personnage favoris</span>
-                                                    <span style="display: flex; justify-content: center; width: 100%;">Misaka Mikoto</span>
-                                                </div>
-                                                <img style="width: 100%; height: 100%; object-fit: cover; object-position: center;margin-top: 5px;" src="Action/ActionFour/Favorite.gif">
-                                                
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                 
-                                    <script>
-                                        imageActionFour = document.getElementById("actionFour");
-                                        
-                                        imageActionFour.addEventListener("mouseover",function(){
-                                            imageActionFour.addEventListener("mousemove",parallax);
-                                        })
-                                    
-                                        function parallax(e){
-                                            
-                                                
-                                            document.querySelectorAll(".object").forEach(function(move){
-
-                                            
-                                                var x = e.clientX * 4/250;
-                                                var y = e.clientY * 4/250;
-                                                imageActionFour.style.transition  = "none"
-                                                imageActionFour.style.left = x + "px"; 
-                                                imageActionFour.style.top = - y + "px";
-                                            })
-                                        }
-                                        
-                                        imageActionFour.addEventListener("mouseout",function(){
-                                            imageActionFour.style.left = 0 + "px"; 
-                                            imageActionFour.style.top = 0 + "px";
-                                            imageActionFour.style.transition  = "all 0.5s"
-
-                                        })
-                                    
-                                    </script>
-
-                                    
-                    </div>
-
-                    <script>
-                        ActionFour.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="none"
-                            DivActionFour = document.getElementById("ActionDivFour")
-                            DivActionFour.style.opacity = "1";
-                            DivActionFour.style.pointerEvents = "auto";
-                        })
-
-                        hiddenbuttonFour = document.querySelector(".A4   ");
-                        hiddenbuttonFour.addEventListener("click",function(){
-                            document.body.style.pointerEvents ="all"
-                        
-                            DivActionFour.style.opacity = "0";
-                            DivActionFour.style.pointerEvents = "none";
-                        })
-                        
-                    </script>
                 </div>
-            
+                <!--PhiddenDiv-->
+                <p> Gun Gale Online (GGO) est le jeu de l'arc Phantom Bullet. Cet univers met l'accent sur l'utilisation des armes a feu de tout type : armes d'assaut, fusils de précision mais aussi baïonnettes.</p>
+                <p> Kirito est le seul personnage qui y utilise des sabres laser. Il possède une apparence féminine dans ce jeu. Il se démarque très vite en combattant et tuant les Top Players. L'argent reçu dans ce jeu peut être échangé contre des objets de la vie réelle.</p>
+                <p> Mais alors que tout va pour le mieux, un mystérieux joueur fait disparaître les trois meilleurs joueurs. Ce personnage possède une arme qui tue aussi dans la vie réelle et Kirito va donc essayer de combattre ce mystérieux ennemi.</p>
+                <div class="SuccesAndFavorite"> <!--SuccesAndFavorite-->
+                    <div class="Succes"> <!--SuccesOne-->
+
+                        <p class="SuccesTitle" >Trophées débloqués</p><!--pSucces-->
+                        
+                        <div class="imgSucces"> <!--imgSucces-->
+                            
+                            <div class="heart">
+                                <div class="hearthidden">David a aimé la série</div>
+                                <img class="succesImage" src="logo/heart.png" >
+                              </div>
+                              
+                              <div class="book">
+                                <div class="bookhidden">David a aimé l'histoire</div>
+                                <img class="succesImage" src="logo/book.png" >
+                              </div>
+                              
+                              <div class="people">
+                                <div class="peoplehidden">David a aimé les personnages</div>
+                                <img class="succesImage" src="logo/people.png" >
+                              </div>
+                              
+                              <div class="medal" >
+                                <div class="medalhidden">Cet animé est dans son top 3</div>
+                                <img class="succesImage" src="logo/medalgold.png" >
+                              </div>
+                              
+                           <style>
+                            .succesImage{
+                                width: 35px;
+                                height: 35px;
+                            }
+                           </style> 
+                            
+                            
+                            
+                            
+                        </div>
+
+                    
+                    </div>
+                    <div class="Favorite"> <!--FavoritehiddenDiv-->
+                        <div class="TitleFavorite" ><!--TitleFavorite-->
+                            <span style="color:red;">Personnage favoris</span>
+                            
+                        </div>
+                        <img class="imgFavorite" src="Action/ActionSix/favorite.gif"><!--imgFavorite-->
+                        
+                        <style>
+                            .TitleFavorite{
+                                position: absolute; width: 100%;margin-top: 5px;;
+                            }
+
+                            .imgFavorite{
+                                width: 100%; height: 100%; object-fit: cover; object-position: center;margin-top: 5px;
+                            }
+                        </style>
+                    </div>
+                </div>
             
             </div>
+         
 
-    
+    </div>
+
+<!-- Fin Div Pour m'aider à créer la div en javascript-->     
+        
             </div>
         </div>
 
         <div class="grid ">
-    
-            <div class="title">
-                Romance
-            </div>
-            <div class="AnimeRomance">
-                <div class="Anime OneB">
+       
+        <div class="addAnimeRomance" style="z-index: 99;" id="addAnime">
+            <div  style="display: flex;justify-content: center;margin-top: 1%;">Ajouter un animé de Romance :</div>
+            
+            <div style="display: flex; justify-content: space-around; align-items: top; height: 100%; margin-top: 1%;">
+               
+                <div>
+                    <label for="imageInput" style="display: flex;justify-content: center;">Choisir une image:</label>
+                    <input type="file" id="imageInput" accept="image/*" style="margin-top: 5%;">
 
+                    <label for="imageInput" style="display: flex;justify-content: center; margin-top: 5%;">Choisir un background:</label>
+                    <input type="file" id="backgroundInput" accept="image/*" style="margin-top: 5%;">
+
+                    <label for="imageInput" style="display: flex;justify-content: center; margin-top: 5%;">Choisir personnage favoris:</label>
+                    <input type="file" id="favoriteInput" accept="image/*" style="margin-top: 5%;">
+
+                    <label for="imageInput" style="display: flex;justify-content: center; margin-top: 5%;">Titre de l'animé :</label>
+                    <div style="display: flex;justify-content: center;margin-top: 5%;">
+                        <textarea id="TitleAnime" > </textarea>
+                    </div>
+
+                    <label for="imageInput" style="display: flex;justify-content: center; margin-top: 5%;"> Studio d'animation :</label>
+                    <div style="display: flex;justify-content: center;margin-top: 5%;">
+                        <textarea id="TitleStudio" > </textarea>
+                    </div>
+                    
+                    <div style="display: flex;justify-content: center; margin-top: 5%;">
+                        <span style="display: flex;justify-content: center; margin-top: 5%;">Attribuer une note :</span>
+                        <div class="starDiv" style="width: 30%; margin-left: 5px;">
+                            <span class="star" data-value="1"></span>
+                            <span class="star" data-value="2"></span>
+                            <span class="star" data-value="3"></span>
+                            <span class="star" data-value="4"></span>
+                            <span class="star" data-value="5"></span>
+                        </div>
+                    </div>
                 </div>
 
+                  <div>
+                    <label for="summaryInput" style="display: flex;justify-content: center; margin-top: 5%;">Écrire un résumé:</label>
+                    <textarea id="summaryInput" class="textResumé"></textarea>
+                    
+                   
+                    <div style="margin-top: 5%;">
+                        <div id="Heart" class="likediv">Vous avez aimé l'animé : <input type="checkbox" class="check" id="1checked" data-value=""> <img style="width: 25px; height: 25px;" src="logo/heart.png" ></div>
+                        <div id="Book" class="likediv">Vous avez aimé l'histoire : <input type="checkbox" class="check" id="2checked"> <img style="width: 25px; height: 25px;" src="logo/book.png" ></div>
+                        <div id="People" class="likediv">Vous avez aimé les personnages : <input type="checkbox" class="check" id="3checked"> <img style="width: 25px; height: 25px;" src="logo/people.png" ></div>
+                        <div id="Medal" class="likediv"> Cet animé est dans votre top 10 : <input type="checkbox" class="check" id="4checked"> <img style="width: 40px; height: 25px;" src="logo/medal.png" ></div>
+                        <div id="MedalGold" class="likediv"> Cet animé est dans votre top 3 : <input type="checkbox" class="check" id="5checked"> <img style="width: 40px; height: 25px;" src="logo/medalgold.png" ></div>
+                    </div>
+
+                    <div style="display: flex;justify-content: center; margin-top: 3%;">
+                        <button class="addButtons" id="addButton">Ajouter</button>
+                    </div>
+                  </div>  
+            
+                </div>
+            
+            <style>
+                .likediv{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5px;
+                }
+
+                .addAnimeRomance{
+  position: fixed;
+  top: -75vh;
+  left: 25vw;
+  right: 25vw;
+  height: fit-content;
+  padding: 25px;
+  background-color: #2b2d42;;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  text-shadow: none;
+  transition: all 1s ;
+}
+                .textResumé{
+                    width: 20vw;
+                    height: 10vh;
+
+                }
+
+               
+
+                .addButtons:hover{
+                    cursor: pointer;
+                }
+
+                .star {
+                        font-size: 0; /* pour éviter l'espace entre les étoiles */
+                        }
+
+                        .star::before {
+                        content: "★";
+                        font-size: 2rem;
+                        color: gray;
+                        cursor: pointer;
+                        }
+
+                        .star.active::before,
+                        .star:hover::before {
+                        color: gold;
+                }
+            </style>
+            
+            <script>
+               const stars = document.querySelectorAll('.star');
+                let rating = 0;
+
+                stars.forEach((star, index) => {
+                    star.addEventListener('click', () => {
+                        rating = index + 1;
+                        
+                        stars.forEach((s, i) => {
+                        if (i <= index) {
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('active');
+                        }
+                        });
+                        
+                        console.log(`Vous avez donné une note de ${rating} étoiles sur 5.`);
+                    
+                    });
+                    });
+
+              
+               
+
+            </script>
+        </div>
+            
+        <div class="title" style="position: relative;">
+                Anime 
+            <span class="addAnime"> + </span>
+
+           
             </div>
+            <div class="AnimeRomance" id="Romance">
+                
+        
+            </div>
+
+            <script>
+                //ID image = imageInput
+                //ID Background = backgroundInput
+                //ID favorite = favoriteInput
+                //ID Titre de l'animé = TitleAnime
+                //ID Studio = TitleStudio
+                //ID des étoiles = rating
+                //ID des succès = like
+                
+                const addAnime = document.getElementById("addAnime")
+
+                const like = document.querySelectorAll(".like")
+                const imageInput = document.getElementById("imageInput");
+                const backgroundInput = document.getElementById("backgroundInput")
+                const favoriteInput = document.getElementById("favoriteInput")
+                const summaryInput = document.getElementById("summaryInput");
+                const title = document.getElementById("TitleAnime");
+                const studio = document.getElementById("TitleStudio")
+               
+                const addButton = document.getElementById("addButton");
+                const imageSummaryDiv = document.getElementById("Romance");
+
+                        
+
+                addButton.addEventListener('click', function() {
+                        // Vérifiez si une image est sélectionnée et si le résumé a au moins 50 mots
+                        if (imageInput.files.length > 0 && summaryInput.value.trim().split(' ').length >= 1 && favoriteInput.files.length > 0) {
+                            addAnime.style.top = -75 + "vh"
+                            count = 1;
+                            count++
+
+                           
+                            
+                            imageSummaryDiv.style.opacity = "1";
+                            imageSummaryDiv.style.pointerEvents = "all";
+                            document.body.style.pointerEvents = "none";
+                            
+                            
+                            const image = document.createElement('img');
+                            image.src = URL.createObjectURL(imageInput.files[0]);
+                            
+                           
+                           
+                            const background = document.createElement('img');
+                            background.src = URL.createObjectURL(backgroundInput.files[0]);
+                            background.classList.add("background")
+                            
+
+                            
+                            const favorite = document.createElement('img');
+                            favorite.src = URL.createObjectURL(favoriteInput.files[0]);
+                           
+                           
+
+                         
+                              
+                            
+                            const divMain = document.createElement('div');
+                            divMain.style.display = "inline-block";
+                            divMain.style.position = "relative";
+
+                            const DescriptionDiv = document.createElement('div');
+                                DescriptionDiv.classList.add("Description")
+                                DescriptionDiv.setAttribute("id",'hidden-romance' + count)
+                                const p1 = document.createElement('p')
+                                p1.textContent = title.value
+                                const p2 = document.createElement('p')
+                                p2.textContent = studio.value
+                                const divRating = document.createElement('div')
+                                divRating.classList.add("starDiv")
+                                p1.style.color = "grey";
+                                p2.style.fontSize = 0.7 +"em";
+                                p2.style.color = "rgb(204, 22, 22)";
+                                p2.style.textShadow = "none";
+                                const ImageDiv = document.createElement("div")
+                                ImageDiv.classList.add("Anime")
+                                ImageDiv.style.backgroundImage = `url('${image.src}')`
+                            
+                                ImageDiv.addEventListener("mouseover", function(){
+                                    DescriptionDiv.style.opacity = "1"
+                                    DescriptionDiv.style.transform = "scale(1.0)"
+                                })
+                                
+                                ImageDiv.addEventListener("mouseout", function(){
+                                    DescriptionDiv.style.opacity = "0"
+                                    DescriptionDiv.style.transform = "scale(0.95)"
+                        })
+                            
+                            
+                            for (let a = 0; a < 5; a++) {
+                                const star1 = document.createElement('img')
+                                
+                                star1.src = a < rating ? "star.png" : "starvoid.png";
+                                divRating.appendChild(star1)
+                            }
+
+                            DescriptionDiv.appendChild(p1)
+                            DescriptionDiv.appendChild(p2)
+                            DescriptionDiv.appendChild(divRating)
+                               
+                            const divMain2 = document.createElement('div')
+                                divMain2.classList.add("DescriptionDiv")
+                                divMain2.appendChild(background)
+
+                                
+
+                                const    ImagehiddenDiv = document.createElement('div')
+                                    ImagehiddenDiv.classList.add("object")
+                                
+                                    const  Imagehidden = document.createElement('img')
+                                        Imagehidden.classList.add("imageDescription")
+                                        Imagehidden.src = image.src
+                                    
+                                        ImagehiddenDiv.appendChild(Imagehidden)
+
+                                        ImagehiddenDiv.addEventListener("mouseover",function(){
+                                            ImagehiddenDiv.addEventListener("mousemove",parallax);
+                                        })
+
+                                        function parallax(e){
+                                            
+                                                
+                                           
+
+                                            
+                                                var x = e.clientX * 4/250;
+                                                var y = e.clientY * 4/250;
+                                                Imagehidden.style.transition  = "none"
+                                                Imagehidden.style.left = x + "px"; 
+                                                Imagehidden.style.top = - y + "px";
+                                           
+                                        }
+                                        
+                                        ImagehiddenDiv.addEventListener("mouseout",function(){
+                                            Imagehidden.style.left = 0 + "px"; 
+                                            Imagehidden.style.top = 0 + "px";
+                                            Imagehidden.style.transition  = "all 0.5s"
+
+                                        })
+                                divMain2.appendChild(ImagehiddenDiv) // DivMain 2 : "ImageHiddenDiv"
+
+                                const   TexthiddenDiv = document.createElement("div")
+                                    TexthiddenDiv.classList.add("textDivAnime")
+
+                                    const   TitlehiddenDiv = document.createElement("div")
+                                        TitlehiddenDiv.classList.add("flex")
+
+                                        const    TitlePhiddenDiv = document.createElement("p")
+                                            TitlePhiddenDiv.textContent = title.value
+                                            TitlePhiddenDiv.classList.add("TitlePhidden")
+
+                                            const   ButtonHiddenDiv = document.createElement("img");
+                                            ButtonHiddenDiv.src = "backwhite.png"
+                                            ButtonHiddenDiv.classList.add("buttonHiddenDiv")
+
+                                        TitlehiddenDiv.appendChild(TitlePhiddenDiv)
+                                        TitlehiddenDiv.appendChild(ButtonHiddenDiv)
+                                    TexthiddenDiv.appendChild(TitlehiddenDiv)
+
+                                    const     Phidden = document.createElement("p")
+                                        Phidden.textContent = summaryInput.value
+                                    TexthiddenDiv.appendChild(Phidden)
+
+                                    const    SuccesAndFavorite = document.createElement("div")
+                                        SuccesAndFavorite.classList.add("SuccesAndFavorite")
+                                        const    SuccesOne = document.createElement("div")
+                                            SuccesOne.classList.add("Succes")
+                                            const       pSucces = document.createElement("p")
+                                                pSucces.classList.add("SuccesTitle")
+                                                pSucces.innerHTML = "Trophées débloqués"
+                                            
+                                                const    imgSucces = document.createElement("div")
+                                                imgSucces.classList.add("imgSucces")
+                                            
+                                         
+                                                const       heart = document.createElement("div")
+                                                        heart.classList.add("hidden")
+                                                        const         hearthidden = document.createElement("div")
+                                                            hearthidden.classList.add("hearthidden")
+                                                            hearthidden.innerHTML = "David a aimé la série"
+
+                                                            const        heartimage = document.createElement("img")
+                                                            heartimage.src = "logo/heart.png"
+                                                            heartimage.classList.add("succesImage")
+                                                        heart.appendChild(hearthidden)
+                                                        heart.appendChild(heartimage)
+                                                        
+                                                    
+                                                        
+                                                   
+                                                    
+                                                        const     book = document.createElement("div")
+                                                        book.classList.add("hidden")
+                                                        const        bookhidden = document.createElement("div")
+                                                            bookhidden.classList.add("bookhidden")
+                                                            bookhidden.innerHTML = "David a aimé l'histoire)"
+
+                                                            const        bookimage = document.createElement("img")
+                                                            bookimage.src = "logo/book.png"
+                                                            bookimage.classList.add("succesImage")
+                                                        book.appendChild(bookhidden)
+                                                        book.appendChild(bookimage)
+                                                        imgSucces.appendChild(book)
+
+                                                        
+                                                    
+                                                    
+                                                    
+                                                 
+                                                        const      people = document.createElement("div")
+                                                        people.classList.add("hidden")
+                                                        const         peoplehidden = document.createElement("div")
+                                                            peoplehidden.classList.add("peoplehidden")
+                                                            peoplehidden.innerHTML = "David a aimé les personnages"
+
+                                                            const          peopleimage = document.createElement("img")
+                                                            peopleimage.src = "logo/people.png"
+                                                            peopleimage.classList.add("succesImage")
+                                                        people.appendChild(peoplehidden)
+                                                        people.appendChild(peopleimage)
+                                                        
+                                                    
+                                                    
+                                                   
+                                                   
+                                                        const        medal = document.createElement("div")
+                                                        medal.classList.add("hidden")
+                                                        const          medalhidden = document.createElement("div")
+                                                            medalhidden.classList.add("medalhidden")
+                                                            medalhidden.innerHTML = "Cet animé est dans son top 10"
+
+                                                            const          medalimage = document.createElement("img")
+                                                            medalimage.src = "logo/medal.png"
+                                                            medalimage.classList.add("succesImage")
+                                                            medalimage.style.width = 55 + "px"
+                                                        medal.appendChild(medalhidden)
+                                                        medal.appendChild(medalimage)
+                                                        
+                                                  
+                                                     SuccesBoard = [heart, book, people, medal]
+                                                     likes = document.querySelectorAll('.check');
+                                                     
+                                                for (let i = 0; i < likes.length; i++) {
+                                                    
+                                                   
+                                                        if (likes[i].checked) {
+                                                           
+                                                            console.log("true")
+                                                            SuccesBoard[i].classList.remove("hidden")
+                                                            SuccesBoard[i].classList.add("visible")
+                                                            } 
+                                                            
+                                                    } 
+                                                    
+                                                        imgSucces.appendChild(heart)
+                                                        imgSucces.appendChild(book)
+                                                    
+                                                        imgSucces.appendChild(people)
+                                                        imgSucces.appendChild(medal)
+                                            
+                                   
+                                                        const      FavoritehiddenDiv = document.createElement("div")
+                                                    FavoritehiddenDiv.classList.add("Favorite")
+                                                    const         TitleFavorite = document.createElement("div")
+                                                        TitleFavorite.classList.add("TitleFavorite")
+                                                        const          spanFavorite = document.createElement("span")
+                                                            spanFavorite.innerHTML = "Personnage favoris :"
+                                                            spanFavorite.style.color = "red"
+                                                            TitleFavorite.appendChild(spanFavorite)
+
+                                                            const       imgFavorite = document.createElement("img")
+                                                        imgFavorite.classList.add("imgFavorite")
+                                                        imgFavorite.src = favorite.src
+                                                    FavoritehiddenDiv.appendChild(TitleFavorite)
+                                                    FavoritehiddenDiv.appendChild(imgFavorite)
+
+                                            
+                                                    SuccesOne.appendChild(pSucces)
+                                            SuccesOne.appendChild(imgSucces)
+                                            SuccesAndFavorite.appendChild(SuccesOne)
+                                            SuccesAndFavorite.appendChild(FavoritehiddenDiv)
+                                   
+                                        TexthiddenDiv.appendChild(SuccesAndFavorite)
+                                divMain2.appendChild(TexthiddenDiv) // DivMain 2 : "ImageHiddenDiv" "TexthiddenDiv"
+                                
+
+                                
+                            divMain.appendChild(DescriptionDiv)
+                            divMain.appendChild(ImageDiv)
+                            divMain.appendChild(divMain2)
+
+                           
+
+                            
+                            imageSummaryDiv.appendChild(divMain)
+
+                            ButtonHiddenDiv.addEventListener("click",function(){
+                            document.body.style.pointerEvents ="all"
+                        
+                            divMain2.style.opacity = "0";
+                            divMain2.style.pointerEvents = "none";
+                        })
+
+                            ImageDiv.addEventListener("click",function(){
+                                document.body.style.pointerEvents ="none"
+                            
+                                divMain2.style.opacity = "1";
+                                divMain2.style.pointerEvents = "all";
+                            })
+                            
+                            
+                            
+                    
+                            // Réinitialisez les champs
+                            imageInput.value = '';
+                            backgroundInput.value = '';
+                            favoriteInput.value = '';
+                            summaryInput.value = '';
+                            title.value= '';
+                            studio.value='';
+
+                            stars.forEach((star, index) => {
+                                
+                                star.classList.remove("active")
+                                
+                                star.classList.add("remove")
+                                
+                            })
+
+                            likes.forEach((like, index) =>{
+                                like.checked = false
+                            })
+                        
+                        } else {
+                            // Si les conditions ne sont pas satisfaites, affichez un message d'erreur ou désactivez le bouton
+                            alert('Veuillez sélectionner une image et un personnage et entrer un résumé d\'au moins 50 mots.');
+                        }
+                        });
+
+                    
+                        addbuttonAnime = document.querySelector(".addAnime")
+                            addbuttonAnime.addEventListener("click", function(){
+                            addAnime.style.top = 0
+                        })
+                // Créer un objet pour stocker les variables
+                            
+            </script>
         </div>
     </body>
     </html>

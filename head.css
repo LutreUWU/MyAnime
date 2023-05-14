@@ -3,6 +3,32 @@ body{
     margin: 0;
 }
 
+.before{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 70vh;
+    background-image: url("eresh.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: 99;
+    border-radius: 50px;
+    display: flex;
+    
+    transition: all 0.5s
+
+}
+
+
+.testdiv{
+    top: -3%;
+    left: -13%;
+    width: 80%;
+    transform: rotate(-5deg);
+    position: absolute;
+}
+
 .head{
     display: flex;
     justify-content: space-between;
@@ -29,32 +55,34 @@ body{
 }
 
 
-.left-head-hidden{
-    position:fixed;
-    background-color: #2b2d42;
-    box-shadow: 0 -10px 50px whitesmoke;
-    width: 15vw;
-    left:-25vw;
-    top: 0px;
-    bottom: 0px;
-    transition:all 0.8s ;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    
-}
+
 
 
     
 
 .left-head-visible{
+    font-family: Roboto;
     position: relative;
     left:0px;
     width: 20vw;
+   
+    margin-left: 0.5%;
     
     transition:all 0.5s 
 }
 
-    
+.danger{
+    color: white;
+    font-size: 1.5em;
+    transition: all 0.5s;
+}
+
+.danger:hover{
+    text-decoration: underline;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
 .logo{ 
     
     width: 10%;

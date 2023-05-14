@@ -18,43 +18,8 @@
            
 
             <div class="left-head-visible" id="leftVisible">
-                <img class="logo" src="hamburger.png" id="hamburger">
-
-                <div class="left-head-hidden" id="hiddenLeftHead">
-                    <img class="logo returnButton" src="back.png" id="backButton">
-
-                    <div>
-
-                    </div>
-
-                </div>
-
-                <script>
-                    hamburger = document.getElementById("hamburger")
-                    leftHidden = document.getElementById("hiddenLeftHead")
-
-                    leftVisible = document.getElementById("leftVisible")
-                    backButton = document.getElementById("backButton")
-
-                    hamburger.addEventListener("click", function(){
-                       
-                        leftVisible.style.left = "-80px"
-
-                    setTimeout(() => {
-                        leftHidden.style.left = "0vw"
-                            },400)   
-                             })
-
-                    backButton.addEventListener("click", function(){
-                        leftHidden.style.left = "-25vw"
-                        
-
-                        setTimeout(() => {
-                        leftVisible.style.left = "0px"
-                            },400)   
-                             
-                    })         
-                </script>
+                <span class="danger">Comment ça marche ?</span>
+                
             </div>
 
             <div class="mid-head">
@@ -70,11 +35,32 @@
         </div>
 
        
-
-        <div class="right-head-hidden">
-            right
+        <div class="before">
+            <div style="position: relative; width: 100%;">
+                <img class="testdiv" src="test.png">
+            </div>
+            
+            <span style="color:rgb(255, 255, 255); font-size: 10em;margin-left: -52%; margin-top: 18%;"> = </span>
+            
+            <div>
+                <img style="width: 33%; position: fixed;margin-top: 5%; margin-left: 2%; border-radius: 50px; transform: rotate(5deg);"src="result.png">
+            </div>
         </div>
+        
+        <script>
+            before = document.querySelector(".before")
+            danger = document.querySelector(".danger")
 
+            before.addEventListener("click",function(){
+                before.style.opacity = 0;
+                before.style.pointerEvents = "none";
+            })
+
+            danger.addEventListener("click",function(){
+                before.style.opacity = 1;
+                before.style.pointerEvents = "all";
+            })
+        </script>
 
 <!--Div Pour m'aider à créer la div en javascript-->        
         <div class="DescriptionDiv actionSixDescription " style="display: none;"> <!--DivMain2-->
@@ -166,12 +152,12 @@
         <div class="grid ">
        
         <div class="addAnimeRomance" style="z-index: 99;" id="addAnime">
-            <div  style="display: flex;justify-content: center;margin-top: 1%;">Ajouter un animé de Romance :</div>
+            <div  style="display: flex;justify-content: center;margin-top: 1%;">Ajouter un animé :</div>
             
             <div style="display: flex; justify-content: space-around; align-items: top; height: 100%; margin-top: 1%;">
                
                 <div>
-                    <label for="imageInput" style="display: flex;justify-content: center;">Choisir une image:</label>
+                    <label for="imageInput" style="display: flex;justify-content: center;">Choisir une cover:</label>
                     <input type="file" id="imageInput" accept="image/*" style="margin-top: 5%;">
 
                     <label for="imageInput" style="display: flex;justify-content: center; margin-top: 5%;">Choisir un background:</label>
